@@ -53,10 +53,7 @@ int main() {
     for (int i=0; i<M+K; i++) {
         scanf("%lld %lld %lld", &a, &b, &c);
         if (a == 1) update(b, c);
-        if (a == 2) {
-            long long temp = query(1, 1, S, b, c);
-            printf("%lld\n", temp);
-        }
+        if (a == 2) printf("%lld\n", query(1, 1, S, b, c));
     }
     return 0;
 }

@@ -32,10 +32,7 @@ int main() {
     for (int i=0; i<M+K; i++) {
         scanf("%lld %lld %lld", &a, &b, &c);
         if (a == 1) update(b, c);
-        if (a == 2) {
-            long long temp = query(b-1, c);
-            printf("%lld\n", temp);
-        }
+        if (a == 2) printf("%lld\n", query(b-1, c));
     }
     return 0;
 }
